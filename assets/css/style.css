@@ -678,7 +678,8 @@ main {
 }
 
 .modal-close-btn {
-  position: absolute;
+  position: relative;
+  /* display: none; */
   top: 15px;
   right: 15px;
   background: var(--onyx);

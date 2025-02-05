@@ -171,3 +171,15 @@ function closeModal() {
   const modal = document.getElementById("imageModal");
   modal.style.display = "none";
 }
+
+// Add this modal structure inside the body tag of your index.html file
+
+// Modal
+const modalHTML = `
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage" alt="Expanded View">
+</div>
+`;
+
+document.body.insertAdjacentHTML('beforeend', modalHTML);
